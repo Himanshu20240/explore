@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Croissant One', cursive;
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:white;
+}
+.dark
+{
+    background: #000000;
+}
+.calculator
+{
+    position:relative;
+    width: 340px;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgb(198, 198, 196),-15px -15px 20px rgb(214, 213, 212);
+}
+.dark .calculator
+{
+    background: #575858;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25),
+    -15px -15px 20px rgba(74, 73, 73, 0.963);
+}
+.calculator .buttons
+{
+    position: relative;
+    display:grid;
+}
+.calculator .buttons #value
+{
+    position:relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width:100%;
+    text-align: end;
+    color:black;
+    height:100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(235, 234, 234, 0.979),
+    inset -5px -5px 20px rgb(223, 222, 222);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+ .dark .calculator .buttons #value
+ {
+    background: #3e3f3f;
+    color:white;
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.25),
+    inset -15px -15px 20px rgba(0, 0, 0, 0.1);
+ }
+.calculator .buttons span
+{
+    position:relative;
+    padding:10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 20px white;
+    margin:10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color:#646464;
+    border:2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px white;
+    border-radius: 10px;
+}
+.dark .calculator .buttons span
+{
+    color:white;
+    border:2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255,255,255,0.1);
+}
+
+.calculator .buttons span:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px white;
+    color:red;
+}
+.dark .calculator .buttons span:active
+{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+     inset -5px -5px 10px rgba(255,255,255,0.1);
+} 
+
+.calculator .buttons span#clear
+{
+    grid-column: span 2;
+    background: red;
+    color:white;
+    border:2px solid #edf1f4;
+}
+.calculator .buttons span#plus
+{
+    grid-row: span 2;
+    background: rgb(47, 225, 47);
+    color:white;
+    border:2px solid #edf1f4;
+}
+.calculator .buttons span#equal
+{
+    grid-row: span 2;
+    background: rgb(240, 167, 9);
+    color:white;
+    border:2px solid #edf1f4;
+}
+.dark .calculator .buttons span#clear,
+.dark .calculator .buttons span#plus,
+.dark .calculator .buttons span#equal
+{
+    border: 2px solid #333;
+}
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px white,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.dark .calculator .buttons span#clear:active,
+.dark .calculator .buttons span#plus:active,
+.dark .calculator .buttons span#equal:active
+{
+    box-shadow:  inset 5px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.toggleBtn
+{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background: #555;
+    cursor: pointer;
+    border:2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px #fff;
+}
+.dark .toggleBtn
+{
+background: #edf1f4;
+border: 2px solid #333;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+-5px -5px 10px rgba(255,255,255,0.25);
+}
+
+
+
+
+
