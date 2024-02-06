@@ -11,7 +11,7 @@ let body = document.querySelector('body');
             value.innerHTML = eval(value.innerHTML);
         }
         else{
-            if(this.innerHTML=="clear"){
+            if(this.innerHTML=="Clear"){
                 value.innerHTML = "";
             }
             else
